@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 function runGame(gameType) {
 
+    document.getElementById("answer-box").value = "";
+
     // Create two random numbers between 1 and 25
     let num1 = Math.floor(Math.random() * 25) + 1;
     let num2 = Math.floor(Math.random() * 25) + 1;
@@ -61,6 +63,7 @@ function checkAnswer() {
     
     runGame(calculatedAnswer[1]);
 }
+
 
 /**
  * Gets the operands (the numbers) and the operator (plus, minus, etc.)
